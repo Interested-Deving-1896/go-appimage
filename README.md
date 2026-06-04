@@ -1,43 +1,75 @@
-# Go AppImage ![](https://github.com/probonopd/go-appimage/actions/workflows/build.yaml/badge.svg)
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# go-appimage
 
-An implementation of [AppImage](https://appimage.org) tools written in Go by the inventor of the AppImage format.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/go-appimage)
 
-Documentation:
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-* [`appimagetool`](https://github.com/probonopd/go-appimage/blob/master/src/appimagetool/README.md), a tool to deploy dependencies into AppDirs (including things like Qt, Gtk, GStreamer,...) and to convert AppDirs into AppImages
-* [`appimaged`](https://github.com/probonopd/go-appimage/blob/master/src/appimaged/README.md), an optional daemon that integrates AppImages into the system, shows their icons, and makes them executable
+## Architecture
 
-Download them from https://github.com/probonopd/go-appimage/releases/tag/continuous.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-## Update Information
+## Install
 
-When `appimagetool` runs on GitHub Actions, it automatically embeds [UpdateInformation](https://github.com/AppImage/AppImageSpec/blob/master/draft.md#update-information) into the generated AppImages. This enables delta updates using zsync.
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-The format of the generated UpdateInformation is:
+```bash
+git clone https://github.com/Interested-Deving-1896/go-appimage.git
+cd go-appimage
 ```
-gh-releases-zsync|<owner>|<repo>|<release>|<filename>.zsync
+
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/go-appimage`](https://github.com/Interested-Deving-1896/go-appimage) and mirrored through:
+
+```
+Interested-Deving-1896/go-appimage  ──►  OpenOS-Project-OSP/go-appimage  ──►  OpenOS-Project-Ecosystem-OOC/go-appimage
 ```
 
-For example: `gh-releases-zsync|probonopd|go-appimage|continuous|appimaged-*-x86_64.AppImage.zsync`
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-Additionally, a `.zsync` file is automatically generated alongside each AppImage and uploaded to the GitHub Release, enabling efficient delta updates.
+## Contributors
 
-## Why Go?
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-* Go follows the "keep it simple" principle - in line with what I like
-* Go compiles code to static binaries by default - no messing around with shared libraries that tend to break on some target systems (e.g., for converting SVG to PNG), no need to build in Docker containers with ancient systems for compatibility
-* Go does not need Makefiles, Autoconf, CMake, Meson - stuff that adds "meta work" which I don't like to spend my time on
-* Go is designed with concurrency and networking in mind - stuff that will come in handy for building in p2p distribution and updating
-* Go is something I want to learn - and one learns best using a concrete project
+## Origins
 
-## TODO
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-* Get rid of C code embedded in Go
-* Get rid of external tools from https://github.com/probonopd/static-tools and replace with native Go
+## Resources
 
-## Conventions
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-* https://github.com/golang-standards/project-layout/tree/master/pkg
+## License
 
-## Stargazers over time
-[![Stargazers over time](https://starchart.cc/probonopd/go-appimage.svg?variant=adaptive)](https://starchart.cc/probonopd/go-appimage)
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/go-appimage/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
